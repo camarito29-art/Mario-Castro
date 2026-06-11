@@ -1,0 +1,40 @@
+/*
+selector{
+    propiedad: valor;
+    otra-propiedad: valor;
+}
+*/
+
+.caja {
+    width: 75px;
+    height: 75px;
+    border: 4px solid rgb(0, 0, 0);
+}
+
+#contenedor {
+    border: 2px solid rgb(0, 0, 0);
+    height: 332px;
+    display: flex;
+    /*Define el contenedor como un contenedor flexible*/
+    /*flex-direction: row; /*Define la dirección de los elementos flexibles en fila (horizontal)*/
+    /*flex-direction: column; /*Define la dirección de los elementos flexibles en columna (vertical)*/
+    justify-content: space-evenly; /*Distribuye en eje horizontal*/
+    
+
+}
+
+.verde {
+    background-color: rgb(12, 199, 37);
+}
+
+.azul {
+    background-color: rgb(12, 37, 199);
+}
+
+.rojo {
+    background-color: rgb(199, 12, 12);
+}
+
+.amarillo {
+    background-color: rgb(199, 199, 12);
+}

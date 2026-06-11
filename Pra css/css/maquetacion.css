@@ -1,0 +1,40 @@
+/*Comentario de CSS*/
+
+/*Selectores: Identifican y delimitan los elementos HTML alos cuales se le aplica este estilo
+selector{
+    propiedad: valor;
+    otra-propiedad: valor;
+}
+*/
+
+/*Selector de etiqueta*/
+
+h1 {
+    background-color: rgb(138, 90, 182);
+}
+
+/*Selector por clase*/
+.destacado {
+    color: rgb(12, 199, 37);
+    font-size: 20px;
+}
+
+.linea-lateral {
+    border-left: 3px solid rgb(122, 58, 58);
+    border-radius: 5px;
+}
+
+/*Selector universal*/
+* {
+    font-family: Century Gothic, sans-serif;
+}
+
+/*Selector de ID*/
+#nombreMedico {
+    color: rgb(42, 15, 116);
+    font-size: 20px;
+    border-bottom: 2px solid rgb(42, 15, 116);
+}
+
+/*Selector de atributo
+Todo: Al ver formularios*/
