@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClassicGaming.com</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!--Este link siempre es el mismo para poder usar cualquier icono no pago de fontawesome-->
+</head>
+
+<!-- VERIFICACIÓN DE CRITERIOS: 
+Requerimientos
+Header: Título de la página.
+Nav: 2 links internos, 2 enlaces internos y 1 enlace a otra página web.
+
+Main: Secciones de juegos nuevos, usados, Top 10, los más vendidos en la página, consolas a la venta y juegos clásicos.
+
+Footer: Información requerida (email, nombre y número telefónico).
+
+Tabla (4x6): Información de los juegos más vendidos en la página.
+
+Listas: Lista ordenada y desordenada con nombres de consolas y videojuegos clásicos.
+
+Imágenes: 2 imágenes informativas y 1 imagen ilustrativa.
+
+Video: 1 video con el top 10 de los mejores videojuegos.
+
+Validación
+Probado en Chrome, Firefox y Edge.
+
+Todos los enlaces funcionan. -->
+
+<!--INFORME DE ANÁLISIS DE LA IA:
+
+Una de las observaciones principales de la IA fue el uso excesivo del elemento <section>. Originalmente, se empleaba esta etiqueta cada vez que se introducía un encabezado <h2>,
+lo cual no aportaba una estructura semántica real ni lograba dividir las secciones informativas de aquellas con contenidos relacionados.
+
+El análisis detalló este abuso y la consecuente falta de organización: el documento contaba con secciones definidas para "Juegos nuevos", "Juegos usados" y "DLC",
+pero luego la estructura lógica se rompía. Elementos como la tabla, el video, la sección de consolas y la de juegos clásicos se encontraban "sueltos" y dispersos directamente dentro del <main>. 
+Para corregir esto y asegurar la coherencia, se agrupó todo el contenido principal de forma ordenada utilizando los elementos <section> de manera estratégica.
+
+
+Asimismo, la IA incluyó recomendaciones fundamentales sobre la jerarquía de los encabezados (<h2> y <h3>), la cual se encontraba rota en el diseño inicial. 
+En la estructura previa, se pasaba de un <h2> ("También puedes encontrar") directamente a una etiqueta <img>, y de ahí a un <h3> ("Consolas de videojuegos"). 
+Esta disposición rompía el orden lógico del árbol de accesibilidad. Para solucionar este problema y no quebrar la secuencia, se reestructuró el flujo colocando la imagen después del <h2> 
+y manteniendo la subordinación correcta con el <h3>.
+
+
+
+Por otro lado, decidí no aplicar una recomendación específica de la IA respecto al uso incorrecto de la etiqueta <hr>. 
+El reporte indicaba que se utilizó para dividir visualmente bloques de contenido, sugiriendo que en su lugar se debió emplear CSS mediante propiedades como border-bottom o margin.
+
+
+Finalmente, cabe destacar que no hubo errores en el análisis recibido, ya que la IA confirmó la excelente implementación de etiquetas estructurales y semánticas clave como 
+<header>, <nav>, <main>, <footer>, <nav aria-label="Navegación principal">, así como el bloque tabular: <thead>, <tbody>, <tr>, <th> y <caption>. Además de validar estos aciertos, 
+la IA aportó valiosas recomendaciones de buenas prácticas que optimizaron la arquitectura final del código.-->
+
+<body>
+    <header>
+        <h1>ClassicGaming</h1>
+
+    </header>
+    <nav aria-label="Navegación principal">
+        <a href="new.html">Nuevos</a>
+        <a href="old.html">Usados</a>
+        <a href="https://www.g2a.com/es/category/dlcs-c191">DLC</a>
+        <a href="#topventas">Top Ventas</a>
+        <a href="#contacto">Contactanos</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2><i class="fa-solid fa-circle-plus"></i> Juegos nuevos <i class="fa-solid fa-circle-plus"></i></h2>
+            <p>Aquí encontrarás juegos completamente nuevos, precintados de fábrica y nunca utilizados por otros usuarios. Estrena los títulos más recientes del mercado con la garantía de recibir un producto intacto y listo para ser disfrutado por primera vez.</p>
+
+            <hr>
+
+            <h2> <i class="fa-solid fa-floppy-disk"></i> Juegos usados <i class="fa-solid fa-floppy-disk"></i></h2>
+            <p>Amplía tu colección sin descuidar tu bolsillo. Aquí podrás comprar videojuegos usados en un estado impecable y casi imperceptible al uso. Nos aseguramos de que tanto el disco o cartucho como la caja original cumplan con los estándares más altos para que juegues sin interrupciones desde el primer minuto.</p>
+
+            <hr>
+
+            <img src="assets\img\requiem dlc.jpeg" alt="Informacion de que se puede encontrar en un DLC" width="500px">
+            <h2>DLC y extras</h2>
+            <p>No dejes que la diversión termine al llegar a los créditos. Amplía tu experiencia de juego con nuestra selección de DLCs, expansiones de historia y contenido adicional para tus títulos favoritos. Descubre nuevos mapas, misiones inéditas, personajes exclusivos y desafíos que llevarán tus partidas al siguiente nivel.</p>
+        </section>
+        <hr>
+        <section>
+            <table>
+                <caption id="topventas">
+                    Videojuegos más vendidos del año
+                </caption>
+                <thead>
+                    <tr>
+                        <th>Top</th>
+                        <th>Nombre</th>
+                        <th>Genero</th>
+                        <th>Plataforma</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Resident Evil 4 remake</td>
+                        <td>Survival Horror</td>
+                        <td>PlayStation</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Hogwarts Legacy</td>
+                        <td>Fantasy</td>
+                        <td>PC</td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>Call of Duty: Modern Warfare II</td>
+                        <td>FPS</td>
+                        <td>Multiplataforma</td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>FIFA 23</td>
+                        <td>Deportes</td>
+                        <td>Multiplataforma</td>
+                    </tr>
+
+                    <tr>
+                        <td>5</td>
+                        <td>God of War: Ragnarok</td>
+                        <td>Acción/Aventura</td>
+                        <td>PlayStation</td>
+                    </tr>
+
+                    <tr>
+                        <td>6</td>
+                        <td>GTA V</td>
+                        <td>Acción/Aventura</td>
+                        <td>Multiplataforma</td>
+                    </tr>
+                </tbody>
+
+            </table>
+            <hr>
+
+            <h2><i class="fa-solid fa-gamepad"></i> Top 10 mejores juegos 2026 <i class="fa-solid fa-gamepad"></i></h2>
+            <video width="600" height="400" controls>
+                <source
+                    src="assets\video\YTDown_YouTube_Los-10-Mejores-Juegos-de-2026-Hasta-Ahor_Media_BSHtdOO_hqc_005_240p.mp4"
+                    type="video/mp4">
+            </video>
+            <hr>
+            <img src="assets\img\f08dfa50-f2ef-4873-bc8f-bcb6c34e48c0.png" alt="" width="400px">
+            <h2><i class="fa-solid fa-gamepad"></i> Tambien puedes encontrar <i class="fa-solid fa-gamepad"></i></h2>
+            <h3><i class="fa-solid fa-compact-disc"></i> Consolas de videojuegos <i
+                    class="fa-solid fa-compact-disc"></i>
+            </h3>
+            <ul>
+                <li>PlayStation 5</li>
+                <li>Nintendo Switch</li>
+                <li>Xbox Series X</li>
+                <li>PlayStation 2</li>
+                <li>Nintendo Wii</li>
+                <li>Xbox 360</li>
+                <li>PlayStation 3</li>
+            </ul>
+            <hr>
+            <img src="assets\img\image_3b69a114.png" alt="Informacion de que se considera un juego clasico"
+                width="500px">
+            <h2><i class="fa-solid fa-compact-disc"></i> Videojuegos clasicos <i
+                    class="fa-solid fa-compact-disc"></i></i>
+            </h2>
+            <ol>
+                <li>Super Mario Bros.</li>
+                <li>The Legend of Zelda: A Link to the Past</li>
+                <li>Street Fighter II</li>
+                <li>Sonic the Hedgehog</li>
+                <li>Tetris</li>
+            </ol>
+            <hr>
+        </section>
+    </main>
+
+    <footer>
+        <h2><i class="fa-solid fa-address-card" id="contacto"></i> Contacto <i class="fa-solid fa-address-card"></i>
+        </h2>
+        <p><i class="fa-regular fa-building"></i> ClassicGaming</p>
+        <p><i class="fa-solid fa-envelope"></i> mario.castro@example.com</p>
+        <p><i class="fa-solid fa-phone"></i> +506 8647 2698</p>
+        <p>&copy; 2026 Mario Castro.</p>
+    </footer>
+</body>
+
+</html>
