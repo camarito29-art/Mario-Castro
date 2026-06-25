@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de usuario</title>
+
+    <link rel="stylesheet" href="\css\registro-usuario.css">
+</head>
+
+<body>
+
+    <main>
+        <header>
+            <h1>Registro de usuario</h1>
+            <p>Complete todos los campos obligatorios para crear su cuenta.</p>
+        </header>
+
+        <form action="">
+            <div>
+                <label for="nombre-usuario">Nombre completo</label>
+                <span aria-hidden="true">*</span>
+
+                <div>
+                    <input type="text" id="nombre-usuario" placeholder="ej. María Pérez" required aria-required="true"
+                        aria-describedby="ayuda-nombre">
+
+                    <span id="ayuda-nombre">Ingrese su nombre completo (mínimo 5 caracteres).</span>
+                </div>
+            </div>
+            <br>
+            <!-- Correo -->
+            <div>
+                <label for="correo">Correo</label>
+                <span aria-hidden="true">*</span>
+
+                <div>
+                    <input type="email" id="correo" placeholder="usuario@dominio.com" required aria-required="true"
+                        aria-describedby="ayuda-correo">
+
+                    <span id="ayuda-correo">Ingrese su un correo válido (ej. usuario@dominio.com).</span>
+                </div>
+            </div>
+            <br>
+            <!-- Contraseña -->
+            <div>
+                <label for="contraseña">Contraseña</label>
+                <span aria-hidden="true">*</span>
+
+                <div>
+                    <input type="password" id="contraseña" placeholder="Ingrese su contraseña" required
+                        aria-required="true" aria-describedby="ayuda-contraseña">
+
+                    <span id="ayuda-contraseña">Ingrese al menos 8 caracteres.</span>
+                </div>
+            </div>
+            <br>
+
+            <!-- Verificacion Contraseña -->
+            <div>
+                <label for="verificacion-contraseña">Verificación de contraseña</label>
+                <span aria-hidden="true">*</span>
+
+                <div>
+                    <input type="password" id="verificacion-contraseña" placeholder="Confirme su contraseña" required
+                        aria-required="true" aria-describedby="ayuda-verificacion-contraseña">
+
+                    <span id="ayuda-verificacion-contraseña">No copie y pegue la contraseña.</span>
+                </div>
+            </div>
+            <br>
+
+            <button type="submit">Registrarse</button>
+
+
+        </form>
+    </main>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Bienestar Estudiantil - CENFOTEC</title>
+</head>
+
+<body>
+
+    <h1>Bienestar Estudiantil - CENFOTEC</h1>
+
+    <!--GESTIONAR ACTIVIDADES-->
+    <h2 id="actividades">1. Gestionar Actividades</h2>
+
+    <h3>Registrar nueva actividad</h3>
+    <form action="">
+        <div>
+            <label for="titulo">Titulo:</label>
+            <span aria-hidden="true">*</span>
+
+            <div>
+                <input type="text" id="titulo" placeholder="" required aria-required="true"
+                    aria-describedby="ayuda-titulo">
+
+                <span id="ayuda-titulo">Ingrese el título de la actividad.</span>
+            </div>
+        </div>
+        <br>
+
+        <div>
+            <label for="descripcion-actividades">Descripción:</label>
+            <span aria-hidden="true">*</span>
+
+            <div>
+                <textarea id="descripcion-actividades" placeholder="" required aria-required="true"
+                    aria-describedby="ayuda-descripcion-actividades"></textarea>
+
+                <span id="ayuda-descripcion-actividades">Ingrese la descripción de la actividad.</span>
+            </div>
+        </div>
+        <br>
+        <div>
+            <label for="publico">Público objetivo:</label>
+            <span aria-hidden="true">*</span>
+
+            <div>
+                <input type="text" id="publico" placeholder="Presencial, Virtual, Híbrido" required aria-required="true"
+                    aria-describedby="ayuda-publico">
+
+                <span id="ayuda-publico">Ingrese el público objetivo de la actividad.</span>
+
+            </div>
+        </div>
+        <br>
+
+        <div>
+            <label for="fecha">Fecha:</label>
+            <span aria-hidden="true">*</span>
+
+            <div>
+                <input type="date" id="fecha" required aria-required="true" aria-describedby="ayuda-fecha">
+
+
+                <span id="ayuda-fecha">Ingrese la fecha de la actividad.</span>
+
+            </div>
+        </div>
+        <br>
+
+        <div>
+            <label for="duracion-estimada">Duración estimada:</label>
+            <span aria-hidden="true">*</span>
+
+            <div>
+                <input type="text" id="duracion-estimada" placeholder="Ej. 2 horas" required aria-required="true"
+                    aria-describedby="ayuda-duracion-estimada">
+
+                <span id="ayuda-duracion-estimada">Ingrese la duración estimada de la actividad.</span>
+
+            </div>
+        </div>
+        <br>
+
+        <button type="submit">Guardar actividad</button>
+        <button type="reset">Borrar</button>
+    </form>
+
+    <hr>
+
+    <!--GESTIONAR COMUNIDADES -->
+    <h2 id="comunidades">2. Gestionar Comunidades Profesionales</h2>
+
+    <h3>Registrar nueva comunidad</h3>
+    <form action="">
+        <div>
+            <label for="nombre-comunidad">Nombre de la comunidad:</label>
+            <span aria-hidden="true">*</span>
+
+            <div>
+                <input type="text" id="nombre-comunidad" placeholder="" required aria-required="true"
+                    aria-describedby="ayuda-nombre-comunidad">
+
+                <span id="ayuda-nombre-comunidad">Ingrese el nombre de la comunidad.</span>
+            </div>
+        </div>
+        <br>
+
+        <div>
+            <label for="descripcion-comunidad">Descripción:</label>
+            <span aria-hidden="true">*</span>
+
+            <div>
+                <textarea id="descripcion-comunidad" placeholder="" required aria-required="true"
+                    aria-describedby="ayuda-descripcion-comunidad"></textarea>
+
+                <span id="ayuda-descripcion-comunidad">Ingrese la descripción de la comunidad.</span>
+            </div>
+        </div>
+        <br>
+        <button type="submit">Guardar comunidad</button>
+        <button type="reset">Borrar</button>
+    </form>
+
+    <!-- GESTIONAR MENTORÍAS -->
+  <h2 id="mentorias">3. Gestionar Mentorías</h2>
+ 
+  <h3>Registrar nueva oportunidad de mentoría</h3>
+  <form>
