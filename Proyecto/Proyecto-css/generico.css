@@ -23,18 +23,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 }
 
 body {
     background-color: var(--blanco);
-    display: flex;
+    display: normal;
     justify-content: center;
     align-items: center;
     padding: 1.5rem;
     /* https://www.youtube.com/shorts/Mmgv9E4yw0s?feature=share */
 }
 
-button{
+button {
     font-size: 0.8rem;
 }
 
@@ -48,14 +49,32 @@ form {
 }
 
 h1 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin-bottom: 0.3rem;
     color: var(--azul);
 }
 
+h2{
+    font-size: 1.25rem;
+    margin-bottom: 0.3rem;
+    color: var(--negro);
+}
+
+h3{
+    font-size: 1.1rem;
+    margin-bottom: 0.2rem;
+    color: var(--azul);
+}
+
+h4{
+    font-size: 1rem;
+    margin-bottom: 0.1rem;
+    color: var(--ceslesteOscuro);
+}
+
 .subtitulo {
     color: var(--grisOscuro);
-    margin-bottom: 1.8rem;
+    margin-bottom: 0.8rem;
     font-size: 0.95rem;
 }
 
@@ -71,7 +90,8 @@ input {
     color: var(--negro);
 }
 
-input:active, input:focus{
+input:active,
+input:focus {
     outline: none;
     border-color: var(--azul);
 }
@@ -88,11 +108,11 @@ label {
     font-weight: normal;
 }
 
-.label-opcional{
+.label-opcional {
     color: var(--grisOscuro);
 }
 
-.texto-oculto{
+.texto-oculto {
     display: none;
 }
 
@@ -108,10 +128,55 @@ label {
     margin-top: 0.5rem;
 }
 
+.limpiar-formulario {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: var(--gris);
+    color: var(--negro);
+    border: none;
+    border-radius: 7px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
 .guardar-formulario:hover {
     background-color: var(--ceslesteOscuro);
 }
 
-.input-error{ /* Clase a asignar dinámicamente con JS*/
+.input-error {
+    /* Clase a asignar dinámicamente con JS*/
     border: 3px solid var(--fuscia);
+}
+
+.table,
+th,
+td {
+    padding: 10px;
+    border-style: solid;
+    border-collapse: collapse;
+    border-width: 2px;
+    border-color: var(--celeste);
+    font-size: 0.6rem;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--azul);
+  font-size: 0.6rem;
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
